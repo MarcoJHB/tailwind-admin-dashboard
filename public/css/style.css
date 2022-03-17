@@ -10,3 +10,29 @@
     font-family: "Roboto", sans-serif;
   }
 }
+
+.project-card {
+  @apply relative 
+  bg-white 
+  hover:bg-slate-50 
+  rounded-xl 
+  drop-shadow
+  overflow-hidden;
+}
+
+.project-card-line {
+  @apply absolute 
+  inset-y-0 
+  w-2 
+  bg-orange-400;
+}
+
+.icon-container {
+  @apply text-right 
+  flex 
+  justify-end 
+  gap-2 
+  p-2 
+  lg:pr-6 
+  lg:pb-6;
+}
