@@ -1,0 +1,38 @@
+/* Body Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.project-card {
+  @apply relative 
+  bg-white 
+  hover:bg-slate-50 
+  rounded-xl 
+  drop-shadow
+  overflow-hidden;
+}
+
+.project-card-line {
+  @apply absolute 
+  inset-y-0 
+  w-2 
+  bg-orange-400;
+}
+
+.icon-container {
+  @apply text-right 
+  flex 
+  justify-end 
+  gap-2 
+  p-2 
+  lg:pr-6 
+  lg:pb-6;
+}
